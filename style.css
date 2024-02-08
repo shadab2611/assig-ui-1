@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Noto+Sans&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;  
+    /* border:1px solid red; */
+}
+
+.main-container{
+    width:100%;
+    height:140vh;
+    background-color:rgb(254,252,252);
+    padding-inline:100px;
+    padding-bottom:20px;
+}
+
+.navbar{
+    width:100%;
+    height:80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom:2px solid gray;
+}
+
+.navbar h3{
+    font-size:30px;
+    color:rgb(174, 16, 16);
+}
+
+.navbar ul {
+    width:500px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+    font-size:17px;
+}
+
+.navbar h4{
+    font-size:19px;
+}
+
+.navbar h4 i{
+    color:brown;
+}
+
+.page{
+    width:100%;
+    height:600px;
+    display:flex;
+    padding-inline:100px;
+    
+}
+
+.page-1{
+    width:40%;
+    height:600px;
+    padding-top:30px;
+   
+}
+
+.page-1 img{
+    width:500px;
+    height: 570px;
+}
+
+.page-2{
+    width:60%;
+    height:600px;
+    padding-block:30px;
+    
+}
+
+.page-2 h2{
+    font-size:40px;
+    font-weight: 600;
+}
+
+.page-2 h2 span{
+    font-weight:1000;
+    color:red;
+}
+
+.page-2 h1{
+    font-size:100px;
+    font-family: 'Caveat', cursive;
+    padding-left:100px;
+    /* padding-right:100px; */
+}
+
+.page-2 button{
+    width:300px;
+    height:60px;
+    border-radius: 50px;
+    border:none;
+    font-size:20px;
+    background-color: transparent;
+    border:1px solid black;
+    margin-left:100px;
+    margin-block:20px;
+}
+
+.box{
+    width:100%;
+    height:220px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;  
+}
+
+.box-1{
+    width:65%;
+    height:220px;
+    padding-inline: 60px;
+    background-color:crimson;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lux-1{
+    width:60%;
+     
+}
+.lux-1 h1{
+    font-size:40px;
+    color:white;
+}
+
+.lux-1 h1 span{
+    font-weight: 100;
+}
+
+.lux-2{
+    width:40%;
+    padding-top:25px;
+}
+
+.lux-2 p{
+    color:white;
+    font-size:15px;
+    line-height:23px;
+}
+
+.lux-2 button{
+    width:300px;
+    height:60px;
+    border:none;
+    font-size:23px;
+    background-color: transparent;
+    color:white;
+    font-weight: 400;
+    text-align: start;
+}   
+
+.box-2{
+    width:30%;
+    height:220px;
+    background-color: transparent;
+    display: flex;
+    align-items:center;
+    flex-direction: column;   
+}
+
+.bottle{
+    width:250px;
+    height:170px;
+    background-color:crimson;  
+}
+
+.bottle img{
+    width:200px;
+    height:296px;
+    position: relative;
+    top:-130px;
+    left:30px;
+}
+
+.box-2 h2{
+   color:crimson;
+   font-weight: 500;
+   padding-right: 105px;
+   padding-top:10px;
+}
+
+
+/* responsive */
+
+@media (max-width:768px){
+    .main-container{
+        width:100%;
+        height:auto;
+        padding-inline:30px;
+    }
+
+    .navbar{
+        width:100%;
+        height:60px;
+    }
+
+    .navbar h3{
+        font-size:25px
+
+    }
+
+    .navbar ul{
+        display:none;
+    }
+
+    .navbar h4{
+        font-size:17px;
+    }
+
+    .page{
+        width:100%;
+        height:700px;
+        padding-inline:50px;
+        display: flex;
+        align-items:center;
+        justify-content:center;
+        flex-direction:column;  
+    }
+        
+    .page-1{
+        width:100%;
+        height:350px;
+    }
+
+    .page-1 img{
+        width:100%;
+        height:100%;
+    }
+
+    .page-2{
+        width:100%;
+        height:350px;
+        display:flex;
+        align-items:center;
+        
+        flex-direction: column;
+    }
+
+    .page-2 h2{
+        font-size:30px;
+        text-align:center;      
+    }
+
+    .page-2 h1{
+        font-size:50px;
+        text-align: center;
+        padding-left:00px;
+    }
+
+    .page-2 button{
+        width:260px;
+        height:50px;
+        font-size:16px;
+        margin-left:0px;   
+    }
+
+    .box{
+        width:100%;
+        height:800px;
+        flex-direction: column;
+    }
+
+    .box-1{
+        width:100%;
+        height:300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+
+    .lux-1{
+        width:100%;
+        
+    }
+    .lux-1 h1{
+        font-size:30px;
+        text-align: center;   
+    }
+
+    .lux-2 {
+        width:100%;
+        text-align: center;  
+    }
+
+    .lux-2 button{
+        font-size:20px;
+        text-align: center;
+
+    }
+
+    .box-2{
+        width:100%;  
+    }
+
+    .box-2 h2{
+        text-align: center;
+        padding:0px;
+        margin-top:8px;
+
+    }
+    .bottle{
+        width:60%;
+    }
+
+    .bottle img{
+        width:70%;
+        height:295px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
